@@ -225,7 +225,7 @@ Using the feet function below do the following:
 */
 
 function feet(centimeter){
-  return centimeter * 30.48;
+  return centimeter / 30.48;
 }
 
 console.log('task 5b:', feet(10));
@@ -274,7 +274,7 @@ if(number1 >= 90){
   return `you got a C`
 }else if(number1 >= 60 || number1 < 70){
   return `you got a D`
-}else{
+}else if(number1 < 60){
   return `you got an F`
 }
 }
